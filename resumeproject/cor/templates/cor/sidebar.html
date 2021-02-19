@@ -1,0 +1,20 @@
+{% load static %}
+<div class="border-right border-warning h-100">
+    <div class="text-center">
+        <img src="{% static 'cor/photo/k1.jpg' %}" alt="profile pic" class="img-fluid rounded-circle mt-5" width="100px" height="100px">
+        <h3 class="text-white mt-3 " style="font-family: 'Satisfy';
+        ">Akash Kumar</h3>
+    </div>
+    <hr class="border-light">
+    <nav class="nav flex-column text-center ">
+        <a href="{% url 'home' %}" class="nav-link {{home}} sidebar " style="color: whitesmoke;">Home</a>
+        <a href="{% url 'services' %}" class="nav-link {{ser}}" style="color: whitesmoke;">Services</a>
+        <a href="{% url 'skil' %}" class="nav-link {{skil}}" style="color: whitesmoke;">Skill</a>
+        <a href="{% url 'contect' %}"  class="nav-link {{contect}}" style="color: whitesmoke;":hover{
+            background-color: #e9cd79;
+        }>Contact</a>
+    </nav> 
+
+
+</div>
+  

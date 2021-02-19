@@ -1,0 +1,20 @@
+{% extends 'cor/base.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-5">
+    <div class="text-center mt-5">
+    <img src="{% static 'cor/photo/k1.jpg' %}" alt="profile pic" class="img-thumbnail" width="250px" height="150px">
+</div>
+<div class="mt-5 text-white mx-5 text-justify">
+    <h1 class=" font-weight-bold st-font" style="font-family: 'Satisfy';"> Hello,</h1>
+</div>
+<div class="px-4" style="line-height: 2rem; color: aliceblue;">
+    <p style="text-indent: 100px;">I am <b class="text-warning">Akash Kumar</b> Web Developer with 5 years of experience in designing and developing user interfaces, testing, debugging and training staff within eCommerce technologies. Proven ability in optimizing web functionalities that improve data retrieval and workflow efficiencies. </p>
+</div>
+<div class="text-center">
+<a href="{% url 'contect' %}" class="btn btn-outline-primary my-5 mr-5">Hire Me</a>
+<a href="{% url 'contect' %}" class="btn btn-outline-warning my-5">Contact</a>
+</div>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume
+    </title>
+    <link rel="icon" href="{% static 'cor/photo/resume.png' %}" type="image/icon type">
+    <link rel="stylesheet" href="{% static 'cor/css/all.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'cor/css/bootstrap.min.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    {% block coresss %}
+    <link rel="stylesheet" href="{% static 'cor/css/cor.css' %}">
+    {% endblock coresss %}
+</head>
+<body>
+<div class="container-fluid bg-dark">
+    <div class="row">
+        <div class="col-sm-2">
+            {% include 'cor/sidebar.html' %}
+     </div>
+        <div class="col-sm-10">
+        {% block content %}
+        {% endblock content %}
+        </div>
+    </div>
+
+</div>
+   
+<div class="card mb-3 " style="max-width: 1500px; height: 5px;">
+    <div class="row no-gutters bg-dark">
+      <div class="col-sm-12">
+        <div class="card-body text-center" style="color: silver; font-family: 'Satisfy';">
+          
+        <p>    Copyright <i class="far fa-copyright i-color"></i>         by:Raju</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="{% static 'cor/js/jquery.js' %}"></script>
+    <script src="{% static 'cor/js/popper.js' %}"></script>
+    <script src="{% static 'cor/js/all.min.js' %}"></script>
+    <script src="{% static 'cor/js/bootstrap.js' %}"></script>
+</body>
+</html>
